@@ -1,9 +1,9 @@
 import { render } from "@testing-library/react";
 import React from "react";
-import "../homepage/homepage.style.scss";
+import "../homepage/directory.style.scss";
 import { Menuitem } from "../menu-item/menu-item.component";
 
-export class Homepage extends React.Component {
+export class Directory extends React.Component {
   constructor() {
     super();
     this.state = {

@@ -1,19 +1,24 @@
 import "./App.css";
 import { React, Component } from "react";
-import { Homepage } from "./Component/homepage/homepage.component";
+import { Directory } from "./Component/homepage/directory.component.jsx";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useNavigate,
+  useMatch,
+  useParams,
+  useLocation,
+} from "react-router-dom";
 
-class App extends Component {
-  constructor() {
-    super();
-  }
-
-  render() {
-    return (
-      <div className="App">
-        <Homepage />
+const App = function () {
+  return (
+    <Router>
+      <div className="app">
+        <Directory />
       </div>
-    );
-  }
-}
+    </Router>
+  );
+};
 
 export default App;
